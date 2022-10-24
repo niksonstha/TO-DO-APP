@@ -17,23 +17,69 @@
   margin-top: 10vh;
   width: 50%;
 }
+#container .todo h1 {
+  font-size: 50px;
+}
 #container .todo #form-field #task-input {
   width: 70%;
-  padding: 10px;
+  padding: 20px;
   border-radius: 20px;
   border: none;
   outline: none;
+  font-size: 20px;
   background-color: #d3cedf;
 }
 #container .todo #form-field #add-task {
-  padding: 10px;
+  padding: 20px;
   border-radius: 20px;
   border: none;
   outline: none;
   margin: 40px;
-  transition: 0.5s ease-in-out;
+  font-size: 20px;
+  transition: 1s ease-in-out;
 }
 #container .todo #form-field #add-task:hover {
   cursor: pointer;
-  background-color: #d3cedf;
+  background-color: #4a2e8d;
+  color: white;
+}
+#container .todo h2 {
+  font-size: 40px;
+}
+#container .todo #task-list ul {
+  list-style: none;
+  margin-top: 20px;
+}
+#container .todo #task-list ul li {
+  display: flex;
+  align-items: center;
+}
+#container .todo #task-list ul li p {
+  background-color: #f2d7d9;
+  padding: 10px;
+  border-radius: 10px;
+  width: 70%;
+  font-size: 20px;
+}
+#container .todo #task-list ul li #edit__delete {
+  margin-left: 40px;
+}
+#container .todo #task-list ul li #edit__delete #edit, #container .todo #task-list ul li #edit__delete #delete {
+  width: 80px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  transition: 0.5s ease-in-out;
+}
+#container .todo #task-list ul li #edit__delete #edit:hover, #container .todo #task-list ul li #edit__delete #delete:hover {
+  cursor: pointer;
+  background-color: rgb(51, 152, 90);
+  color: white;
+}
+#container .todo #task-list ul li #edit__delete #delete:hover {
+  cursor: pointer;
+  background-color: rgb(172, 89, 89);
+  color: white;
 }/*# sourceMappingURL=style.css.map */

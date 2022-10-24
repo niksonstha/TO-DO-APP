@@ -7,6 +7,8 @@
 }
 
 $color_pr1: #748da6;
+$task_field_color: #d3cedf;
+$li_color: #f2d7d9;
 
 #container {
   height: 100vh;
@@ -20,27 +22,86 @@ $color_pr1: #748da6;
     margin-top: 10vh;
     width: 50%;
 
+    h1 {
+      font-size: 50px;
+    }
+
     #form-field {
       //   width: 100%;
       #task-input {
         width: 70%;
-        padding: 10px;
+        padding: 20px;
         border-radius: 20px;
         border: none;
         outline: none;
-        background-color: #d3cedf;
+        font-size: 20px;
+        background-color: $task_field_color;
       }
 
       #add-task {
-        padding: 10px;
+        padding: 20px;
         border-radius: 20px;
         border: none;
         outline: none;
         margin: 40px;
-        transition: 0.5s ease-in-out;
+        font-size: 20px;
+        transition: 1s ease-in-out;
         &:hover {
           cursor: pointer;
-          background-color: #d3cedf;
+          background-color: #4a2e8d;
+          color: white;
+        }
+      }
+    }
+
+    h2 {
+      font-size: 40px;
+    }
+
+    #task-list {
+      ul {
+        list-style: none;
+        margin-top: 20px;
+
+        li {
+          display: flex;
+          align-items: center;
+
+          p {
+            background-color: $li_color;
+            padding: 10px;
+            border-radius: 10px;
+            width: 70%;
+            font-size: 20px;
+          }
+
+          #edit__delete {
+            margin-left: 40px;
+
+            #edit {
+              width: 80px;
+              padding: 10px;
+              border-radius: 10px;
+              border: none;
+              outline: none;
+              font-size: 20px;
+              transition: 0.5s ease-in-out;
+              &:hover {
+                cursor: pointer;
+                background-color: rgb(51, 152, 90);
+                color: white;
+              }
+            }
+
+            #delete {
+              @extend #edit;
+              &:hover {
+                cursor: pointer;
+                background-color: rgb(172, 89, 89);
+                color: white;
+              }
+            }
+          }
         }
       }
     }

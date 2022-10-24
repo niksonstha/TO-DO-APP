@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+#container {
+  height: 100vh;
+  width: 100%;
+  background-color: #748da6;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#container .todo {
+  margin-top: 10vh;
+  width: 50%;
+}
+#container .todo #form-field #task-input {
+  width: 70%;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  background-color: #d3cedf;
+}
+#container .todo #form-field #add-task {
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  margin: 40px;
+  transition: 0.5s ease-in-out;
+}
+#container .todo #form-field #add-task:hover {
+  cursor: pointer;
+  background-color: #d3cedf;
+}/*# sourceMappingURL=style.css.map */

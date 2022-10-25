@@ -32,7 +32,13 @@ addTask.addEventListener("click", (e) => {
     input.value = "";
 
     remove.addEventListener("click", () => {
-      addedTask.removeChild(task);
+      let con = confirm("Are you sure you want to delete");
+      console.log(con);
+      if (con == true) {
+        addedTask.removeChild(task);
+      } else if (con == false) {
+        return;
+      }
     });
   } else {
     alert("please enter your task");

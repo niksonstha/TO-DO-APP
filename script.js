@@ -43,7 +43,7 @@ addTask.addEventListener("click", (e) => {
 
     edit.addEventListener("click", () => {
       let prom = prompt("please type updated value");
-      // prom.toString();
+
       console.log(prom);
       if (prom == null) {
         return;

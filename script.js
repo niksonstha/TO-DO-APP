@@ -40,6 +40,17 @@ addTask.addEventListener("click", (e) => {
         return;
       }
     });
+
+    edit.addEventListener("click", () => {
+      let prom = prompt("please type updated value");
+      // prom.toString();
+      console.log(prom);
+      if (prom == null) {
+        return;
+      } else {
+        para.innerText = prom;
+      }
+    });
   } else {
     alert("please enter your task");
   }

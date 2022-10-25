@@ -4,6 +4,7 @@ let addedTask = document.getElementById("task-added");
 
 addTask.addEventListener("click", (e) => {
   e.preventDefault();
+
   if (input.value != "") {
     console.log(input.value);
 
@@ -29,6 +30,10 @@ addTask.addEventListener("click", (e) => {
     buttonDiv.appendChild(remove);
 
     input.value = "";
+
+    remove.addEventListener("click", () => {
+      addedTask.removeChild(task);
+    });
   } else {
     alert("please enter your task");
   }

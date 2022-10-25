@@ -53,6 +53,7 @@
 #container .todo #task-list ul li {
   display: flex;
   align-items: center;
+  margin-top: 10px;
 }
 #container .todo #task-list ul li p {
   background-color: #f2d7d9;

@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
   </head>
   <body>
     <div id="container">
@@ -21,7 +20,19 @@
         <h2>Task</h2>
 
         <div id="task-list">
-          <ul>
+          <ul id="task-added">
+            <li>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Assumenda, recusandae.
+              </p>
+
+              <div id="edit__delete">
+                <button id="edit">Edit</button>
+                <button id="delete">Delete</button>
+              </div>
+            </li>
+
             <li>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -37,5 +48,6 @@
         </div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
